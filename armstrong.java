@@ -1,26 +1,29 @@
 import java.util.*;
+import java.lang.Math;
 public class armstrong {
-    public static void main (string args[]){
+    public static void main (String args[]){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int d,d1,temp1,temp,s=0,c=0;
         temp=n;
         temp1=n;
-        while(n!=0){
-            d=n%10;
+        while(temp!=0){
+            d=temp%10;
             c++;
-            n=n/10;
+            temp=temp/10;
         }
-        while(n!=0){
-            d1=n1%10;
-            s=s+(int) math.pow(d1,c1);
-            n=n/10;
+        while(temp1!=0){
+            d1=temp1%10;
+            s=s+(int) Math.pow(d1,c);
+            temp1=temp1/10;
         }
-        if(temp==s)
+        if(n==s)
         {
             System.out.println("Armstrong");
         }
         else{
             System.out.println("Not Armstrong");
     }
+    Scanner.close();
+}
 }
