@@ -12,7 +12,15 @@ public class armstrong {
             n=n/10;
         }
         while(n!=0){
-            
+            d1=n1%10;
+            s=s+(int) math.pow(d1,c1);
+            n=n/10;
         }
+        if(temp==s)
+        {
+            System.out.println("Armstrong");
+        }
+        else{
+            System.out.println("Not Armstrong");
     }
 }
